@@ -1,0 +1,40 @@
+<div class="header">
+  <img src="/assets/logo.png" alt="Logo">
+  <h1>StackOverflow</h1>
+
+  <div class="links">
+    <h2><a routerLink="">Home</a></h2>
+  </div>
+</div>
+
+<form class="text-center" (ngSubmit)="checkLogin()">
+  <div class="row">
+    User Name : <input type="text" name="username" [(ngModel)]="username">
+  </div>
+
+  <div class="row">
+    Password : <input type="password" name="password" [(ngModel)]="password">
+  </div>
+
+  <div class="row" style="margin-top: 40px;">
+    <div class="buttons">
+      <button type="submit" class="btn btn-success">
+        Login
+      </button>
+    </div>
+  </div>
+
+  <div class="row">
+    <p>Or if you don't have an account</p>
+  </div>
+
+  <div class="row" style="margin-top: 40px;">
+    <div class="buttons">
+       <a routerLink="/signup">SignUp</a>
+    </div>
+  </div>
+</form>
+
+<div *ngIf="error" class="error">{{ error }}</div>
+
+

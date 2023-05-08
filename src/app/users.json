@@ -1,0 +1,213 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "john_doe",
+      "email": "john_doe@example.com",
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "username": "jane_smith",
+      "email": "jane_smith@example.com",
+      "password": "password456"
+    },
+    {
+      "id": 3,
+      "username": "andreea",
+      "email": "jane_smith@example.com",
+      "password": "1234"
+    },
+    {
+      "id": 4,
+      "username": "andreea2",
+      "email": "341",
+      "password": "34134"
+    },
+    {
+      "id": 5,
+      "username": "andreea3",
+      "email": "fnajkfa",
+      "password": "12345"
+    },
+    {
+      "id": 6,
+      "username": "abc",
+      "email": "12314e1",
+      "password": "1234"
+    },
+    {
+      "id": 7,
+      "username": "alexandra",
+      "email": "abc@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 8,
+      "username": "george",
+      "email": "george@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "title": "How do I create a new Angular project?",
+      "description": "I'm new to Angular and need help getting started.",
+      "answers": [
+        {
+          "id": 1,
+          "text": "The meaning of life is to seek happiness.",
+          "authorId": 2,
+          "author": "jane_smith"
+        },
+        {
+          "id": 1,
+          "text": "I'm having trouble with form validation and submission.",
+          "authorId": 3,
+          "author": "andreea"
+        },
+        {
+          "id": 60,
+          "text": "nu stiu",
+          "authorId": 3,
+          "author": "andreea"
+        },
+        {
+          "id": 27,
+          "text": "abc",
+          "authorId": 6,
+          "author": "abc"
+        },
+        {
+          "id": 22,
+          "text": "afada",
+          "authorId": 6,
+          "author": "abc"
+        },
+        {
+          "id": 62,
+          "text": "fddfd",
+          "authorId": 6,
+          "author": "abc"
+        },
+        {
+          "id": 17,
+          "text": "raspuns",
+          "authorId": 6,
+          "author": "abc"
+        },
+        {
+          "id": 25,
+          "text": "dafnad",
+          "authorId": 3,
+          "author": "andreea"
+        },
+        {
+          "id": 79,
+          "text": "testestests",
+          "authorId": 3
+        }
+      ],
+      "tags" : "test, test, test",
+
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "title": "How do I use observables in Angular?",
+      "description": "I need to fetch data from an API and update my UI.",
+      "answers": [
+        {
+          "id": 3,
+          "text": "fndaknfajkgnkangfa.",
+          "authorId": 4,
+          "author": "andreea2"
+        },
+        {
+          "id": 29,
+          "text": "nu stiu",
+          "authorId": 3
+        }
+      ],
+      "tags" : "angular, frontend, observable",
+      "authorId": 2
+    },
+    {
+      "id": 10,
+      "title": "abc",
+      "description": "nu stiu",
+      "tags" : "fnajkdfnakdf",
+      "authorId": 6,
+      "answers": [
+        {
+          "id": 24,
+          "text": "abfadfa",
+          "authorId": 6
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "What are some good books to read?",
+      "description": "I'm looking for some new books to read, but I don't know where to start.",
+      "answers": [
+        {
+          "id": 3,
+          "text": "I highly recommend 'The Hunger Games' by Suzanne Collins.",
+          "authorId": 4
+        },
+        {
+          "id": 4,
+          "text": "'The Great Gatsby' by F. Scott Fitzgerald is a classic that everyone should read.",
+          "authorId": 5
+        },
+        {
+          "id": 5,
+          "text": "If you like fantasy, you should check out 'The Name of the Wind' by Patrick Rothfuss.",
+          "authorId": 6
+        }
+      ],
+      "tags" : "books, authors, fantasy",
+      "authorId": 2
+    },
+    {
+      "id": 3,
+      "title": "How do I start a garden?",
+      "description": "I want to start a vegetable garden, but I don't know how to get started.",
+      "answers": [
+        {
+          "id": 6,
+          "text": "First, you'll need to choose a spot with plenty of sunlight and good soil.",
+          "authorId": 7
+        },
+        {
+          "id": 7,
+          "text": "I recommend starting with easy-to-grow vegetables like tomatoes, cucumbers, and peppers.",
+          "authorId": 8
+        }
+      ],
+      "tags" : "gardening, vegetables, plants",
+      "authorId": 3
+    },
+    {
+      "id": 4,
+      "title": "What are some good workout routines?",
+      "description": "I want to start working out, but I don't know where to start.",
+      "answers": [
+        {
+          "id": 8,
+          "text": "I recommend starting with a simple routine of pushups, squats, and planks.",
+          "authorId": 8
+        },
+        {
+          "id": 9,
+          "text": "If you're looking to build muscle, you should try a weightlifting routine with exercises like bench presses, squats, and deadlifts.",
+          "authorId": 3
+        }
+      ],
+      "tags": "workout",
+      "authorId": 4
+    }
+  ]
+}

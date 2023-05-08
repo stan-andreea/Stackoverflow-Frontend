@@ -1,0 +1,43 @@
+<div class="header">
+  <img src="/assets/logo.png" alt="Logo">
+  <h1>StackOverflow</h1>
+
+
+  <div class="links">
+
+    <h2><a *ngIf="!authService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></h2>
+    <h2><a *ngIf="authService.isUserLoggedIn()" routerLink="/logout" class="nav-link">LogOut</a></h2>
+    <h2>  <a [routerLink]="['/profile']">My Account</a>  </h2>
+
+  </div>
+
+</div>
+
+<div class = "question" *ngIf="question">
+  <h2>{{ question.title }}</h2>
+  <p>{{ question.description }}</p>
+  <p>Tags: {{ question.tags }}</p>
+
+  <p class = "author"> Author {{ author }}</p>
+  <div class = "answers" *ngIf="answers && answers.length > 0">
+    <h3>Answers:</h3>
+    <ul>
+      <li *ngFor="let answer of answers">
+        {{ answer.text }} - {{ answer.author }}
+      </li>
+    </ul>
+  </div>
+
+
+</div>
+
+<div class = "form">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="answer-text">Your Answer</label>
+      <textarea id="answer-text" class="form-control" [(ngModel)]="answerText" name="answerText"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Answer</button>
+  </form>
+</div>
+

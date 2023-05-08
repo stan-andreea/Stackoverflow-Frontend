@@ -1,0 +1,29 @@
+<div class="header">
+  <img src="/assets/logo.png" alt="Logo">
+  <h1>StackOverflow</h1>
+
+
+  <div class="links">
+
+    <h2><a *ngIf="!authService.isUserLoggedIn()" routerLink="/signup" class="nav-link">Signup</a></h2>
+    <h2><a *ngIf="!authService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></h2>
+    <h2><a *ngIf="authService.isUserLoggedIn()" routerLink="/logout" class="nav-link">LogOut</a></h2>
+  </div>
+
+</div>
+
+
+<div class="main-content">
+  <div class="left-column">
+    <h2>A public platform building the definitive collection of coding questions & answers</h2>
+    <p>A community-based space to find and contribute answers to technical challenges, and one of the most popular websites in the world.</p>
+    <p>  <a *ngIf="!authService.isUserLoggedIn()" routerLink="/login" class="nav-link">Join the community</a>  </p>
+  </div>
+  <div class="right-column">
+    <h2>A private collaboration & knowledge sharing SaaS platform for all companies</h2>
+    <p>A web-based platform to increase productivity, decrease cycle times, accelerate time to market, and protect institutional knowledge.</p>
+    <p>  <a [routerLink]="['/questions-page']">See content</a>  </p>
+  </div>
+</div>
+
+

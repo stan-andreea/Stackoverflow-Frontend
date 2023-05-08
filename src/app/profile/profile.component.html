@@ -1,0 +1,15 @@
+<div class="header">
+  <img src="/assets/logo.png" alt="Logo">
+  <h1>StackOverflow</h1>
+
+  <div class="links">
+    <h2><a routerLink="/logout" class="nav-link">LogOut</a></h2>
+    <h2><a [routerLink]="['']">Home</a></h2>
+
+  </div>
+</div>
+
+<div class = "info" *ngIf="user">
+  <h2>{{ user.username }}</h2>
+  <p>{{ user.email }}</p>
+</div>

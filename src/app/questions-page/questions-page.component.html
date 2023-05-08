@@ -1,0 +1,34 @@
+<div class="header">
+  <img src="/assets/logo.png" alt="Logo">
+  <h1>StackOverflow</h1>
+
+  <div class="links">
+    <h2><a *ngIf="!authService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></h2>
+    <h2><a *ngIf="authService.isUserLoggedIn()" routerLink="/logout" class="nav-link">LogOut</a></h2>
+    <h2><a [routerLink]="['/profile']">My Account</a></h2>
+    <h2><a [routerLink]="['']">Home</a></h2>
+
+  </div>
+</div>
+
+<ul>
+  <li *ngFor="let question of questions">
+    <h2><a [routerLink]="['/questions', question.id]">{{ question.title }}</a></h2>
+    <p>{{ question.description }}</p>
+    <p>Asked by {{ question.author }}</p>
+  </li>
+</ul>
+
+<form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="question-title">Question Title</label>
+    <input id="question-title" class="form-control" [(ngModel)]="newQuestionTitle" name="questionTitle">
+  </div>
+  <div class="form-group">
+    <label for="question-description">Question Description</label>
+    <textarea id="question-description" class="form-control" [(ngModel)]="newQuestionDescription" name="questionDescription"></textarea>
+  </div>
+
+
+  <button *ngIf=authService.isUserLoggedIn() type="submit" class="btn btn-primary">Submit Question</button>
+</form>
